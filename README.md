@@ -5,3 +5,4 @@ With what's going on in Matt Mullenweg's head, it's time to kick out wordpress.o
 
 - domain.com replace wordpress.org
 - api.domain.com replace api.wordpress.org
+- wordpress-develop replace the wordpress installation. (For now We push only what we edit, but the full installation will come.)
