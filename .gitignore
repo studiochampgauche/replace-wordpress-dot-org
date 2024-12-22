@@ -12,4 +12,5 @@ domain.com/**/node_modules
 domain.com/**/package-lock.json
 
 
+api.domain.com/**/.htaccess
 api.domain.com/**/wp-config.php
