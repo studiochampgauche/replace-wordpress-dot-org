@@ -1,0 +1,15 @@
+wordpress-develop/**
+!wordpress-develop/wp-config-sample.php
+!wordpress-develop/src/
+!wordpress-develop/src/wp-includes/
+!wordpress-develop/src/wp-includes/update.php
+
+domain.com/**/.npmrc
+domain.com/**/.htaccess
+domain.com/**/wp-config.php
+domain.com/**/dist
+domain.com/**/node_modules
+domain.com/**/package-lock.json
+
+
+api.domain.com/**/wp-config.php
