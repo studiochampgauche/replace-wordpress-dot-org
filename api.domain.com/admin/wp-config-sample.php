@@ -102,6 +102,7 @@ if(!defined('WP_USE_THEMES')){
 */
 if(!defined('WP_DEFAULT_THEME')){
 	define('WP_DEFAULT_THEME', 'core');
+}
 
 
 /* That's all, stop editing! Happy publishing. */
