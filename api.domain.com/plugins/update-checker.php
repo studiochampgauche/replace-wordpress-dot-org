@@ -16,16 +16,34 @@ if(!isset($_SERVER['REQUEST_METHOD']) || $_SERVER['REQUEST_METHOD'] !== 'POST'){
 }
 
 
-$data = json_decode(stripslashes($_POST['plugins']), true);
+$databaseURL = 'http://raw.githubusercontent.com/studiochampgauche/replace-wordpress-dot-org/master/api.domain.com/plugins/database/';
+$databaseURLs = [];
 
-$active_plugins = array_intersect_key($data['plugins'], array_flip($data['active']));
+$pluginsData = json_decode(stripslashes($_POST['plugins']), true);
+$active_plugins = array_intersect_key($pluginsData['plugins'], array_flip($pluginsData['active']));
 
-
-echo wp_json_encode([
+$return = [
 	'plugins' => [],
 	'translations' => [],
 	'no_update' => []
-]);
+];
+
+if($active_plugins){
+
+	foreach ($active_plugins as $k => $v) {
+		
+		if($v['UpdateURI']) continue;
+
+		$slug = explode('/', $k)[0];
+
+		$databaseURLs[] = $databaseURL . $slug . '.json';
+
+	}
+
+}
+
+
+echo wp_json_encode($return);
 
 
 exit;
