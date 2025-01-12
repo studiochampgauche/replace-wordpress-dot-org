@@ -9,10 +9,6 @@ wordpress-develop/**
 
 domain.com/**/dist
 
-
-api.domain.com/**/.htaccess
-api.domain.com/**/wp-config.php
-
 node_modules
 package-lock.json
 sftp-config.json
