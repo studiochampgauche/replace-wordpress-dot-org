@@ -94,7 +94,6 @@ function get_plugin_data( $plugin_file, $markup = true, $translate = true ) {
 		$plugin_data = _get_plugin_data_markup_translate( $plugin_file, $plugin_data, $markup, $translate );
 	} else {
 		$plugin_data['Title'] = $plugin_data['Name'];
-		$plugin_data['Author'] = $plugin_data['AuthorName'];
 	}
 
 	return $plugin_data;
@@ -175,7 +174,6 @@ function _get_plugin_data_markup_translate( $plugin_file, $plugin_data, $markup 
 	$plugin_data['AuthorURL'] = esc_url( $plugin_data['AuthorURL'] );
 
 	$plugin_data['Title'] = $plugin_data['Name'];
-	$plugin_data['Author'] = $plugin_data['AuthorName'];
 
 	// Apply markup.
 	if ( $markup ) {
