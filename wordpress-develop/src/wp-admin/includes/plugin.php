@@ -132,9 +132,8 @@ function _get_plugin_data_markup_translate( $plugin_file, $plugin_data, $markup 
 					load_plugin_textdomain( $textdomain, false, dirname( $plugin_file ) );
 				}
 			}
-		} elseif ( 'hello.php' === basename( $plugin_file ) ) {
-			$textdomain = 'default';
 		}
+		
 		if ( $textdomain ) {
 			foreach ( array( 'Name', 'Website', 'Description', 'AuthorName', 'AuthorURL', 'Version' ) as $field ) {
 				if ( ! empty( $plugin_data[ $field ] ) ) {
@@ -985,10 +984,6 @@ function delete_plugins( $plugins, $deprecated = '' ) {
 		}
 
 		$plugin_slug = dirname( $plugin_file );
-
-		if ( 'hello.php' === $plugin_file ) {
-			$plugin_slug = 'hello-dolly';
-		}
 
 		// Remove language files, silently.
 		if ( '.' !== $plugin_slug && ! empty( $plugin_translations[ $plugin_slug ] ) ) {
