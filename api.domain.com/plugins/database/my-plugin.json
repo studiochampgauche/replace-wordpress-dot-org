@@ -1,5 +1,6 @@
 {
 	"name": "My plugin",
+	"slug": "my-plugin",
 	"version": "1.0.0",
 	"init_file": "init.php",
 	"version_date": "2025-01-11 00:00:00",
