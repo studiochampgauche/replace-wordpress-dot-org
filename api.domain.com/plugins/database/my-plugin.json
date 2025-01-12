@@ -2,16 +2,14 @@
 	"name": "My plugin",
 	"slug": "my-plugin",
 	"version": "1.0.0",
-	"init_file": "init.php",
 	"version_date": "2025-01-11 00:00:00",
-	"website": "https://github.com/studiochampgauche/wordpress-plugin-test",
+	"plugin_uri": "https://github.com/studiochampgauche/wordpress-plugin-test",
 	"package": "https://github.com/studiochampgauche/wordpress-plugin-test/archive/refs/heads/master.zip",
-	"author_name": "",
-	"author_url": "",
-	"minimum_wp": "6.1",
-	"minimum_php": "8.2",
-	"tested_wp": "6.7.1",
-	"tested_php": "",
+	"author": "",
+	"author_uri": "",
+	"requires_wp": "6.1",
+	"requires_php": "8.2",
+	"tested": "6.7.1",
 	"requires_plugins": [],
 	"compatibilities": [],
 	"license": "",
@@ -22,5 +20,5 @@
 		"total": 4
 	},
 	"tags": [],
-	"description": ""
+	"description": "My plugin description"
 }
