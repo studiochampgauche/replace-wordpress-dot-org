@@ -585,20 +585,17 @@ class WP_REST_Plugins_Controller extends WP_REST_Controller {
 			'plugin'       => substr( $item['_file'], 0, - 4 ),
 			'status'       => $this->get_plugin_status( $item['_file'] ),
 			'name'         => $item['Name'],
-			'website'      => $item['Website'],
-			'author_name'  => $item['AuthorName'],
-			'author_url'   => $item['AuthorURL'],
+			'plugin_uri'   => $item['PluginURI'],
+			'author'       => $item['Author'],
+			'author_uri'   => $item['AuthorURI'],
 			'description'  => array(
 				'raw'      => $item['Description'],
 				'rendered' => $marked['Description'],
 			),
 			'version'      => $item['Version'],
 			'network_only' => $item['Network'],
-			'minimum_wp'  => $item['MinimumWP'],
-			'minimum_php' => $item['MinimumPHP'],
-			'tested_wp' => $item['TestedWP'],
-			'tested_php' => $item['TestedPHP'],
-			'manage_updates' => $item['ManageUpdates'],
+			'requires_wp'  => $item['RequiresWP'],
+			'requires_php' => $item['RequiresPHP'],
 			'textdomain'   => $item['TextDomain'],
 		);
 
@@ -907,20 +904,20 @@ class WP_REST_Plugins_Controller extends WP_REST_Controller {
 					'readonly'    => true,
 					'context'     => array( 'view', 'edit', 'embed' ),
 				),
-				'website'   => array(
+				'plugin_uri'   => array(
 					'description' => __( 'The plugin\'s website address.' ),
 					'type'        => 'string',
 					'format'      => 'uri',
 					'readonly'    => true,
 					'context'     => array( 'view', 'edit' ),
 				),
-				'author_name'       => array(
+				'author'       => array(
 					'description' => __( 'The plugin author.' ),
 					'type'        => 'string',
 					'readonly'    => true,
 					'context'     => array( 'view', 'edit' ),
 				),
-				'author_url'   => array(
+				'author_uri'   => array(
 					'description' => __( 'Plugin author\'s website address.' ),
 					'type'        => 'string',
 					'format'      => 'uri',
@@ -955,26 +952,14 @@ class WP_REST_Plugins_Controller extends WP_REST_Controller {
 					'readonly'    => true,
 					'context'     => array( 'view', 'edit', 'embed' ),
 				),
-				'minimum_wp'  => array(
+				'requires_wp'  => array(
 					'description' => __( 'Minimum required version of WordPress.' ),
 					'type'        => 'string',
 					'readonly'    => true,
 					'context'     => array( 'view', 'edit', 'embed' ),
 				),
-				'minimum_php' => array(
+				'requires_php' => array(
 					'description' => __( 'Minimum required version of PHP.' ),
-					'type'        => 'string',
-					'readonly'    => true,
-					'context'     => array( 'view', 'edit', 'embed' ),
-				),
-				'tested_wp'  => array(
-					'description' => __( 'Last version of WordPress tested.' ),
-					'type'        => 'string',
-					'readonly'    => true,
-					'context'     => array( 'view', 'edit', 'embed' ),
-				),
-				'tested_php' => array(
-					'description' => __( 'Last version of PHP tested.' ),
 					'type'        => 'string',
 					'readonly'    => true,
 					'context'     => array( 'view', 'edit', 'embed' ),
