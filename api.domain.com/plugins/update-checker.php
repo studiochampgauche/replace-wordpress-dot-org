@@ -16,7 +16,7 @@ if(!isset($_SERVER['REQUEST_METHOD']) || $_SERVER['REQUEST_METHOD'] !== 'POST'){
 }
 
 
-$databaseURL = 'http://raw.githubusercontent.com/studiochampgauche/replace-wordpress-dot-org/master/api.domain.com/plugins/database/';
+$databaseURL = 'http://api.reactwp.com/plugins/database/';
 
 $mh = curl_multi_init();
 $curl_handles = [];
@@ -60,7 +60,7 @@ if($active_plugins){
 	    curl_multi_remove_handle($mh, $ch);
 
 
-	   	if($responses[$i]['version'] > array_values($active_plugins)[$i]['Version']){
+	   	if($responses[$i]['new_version'] > array_values($active_plugins)[$i]['Version']){
 
 	   		$return['plugins'][] = $responses[$i];
 
