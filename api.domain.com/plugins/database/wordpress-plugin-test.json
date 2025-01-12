@@ -1,7 +1,7 @@
 {
 	"name": "My plugin",
-	"slug": "my-plugin",
-	"plugin": "my-plugin/init.php",
+	"slug": "wordpress-plugin-test",
+	"plugin": "wordpress-plugin-test/init.php",
 	"new_version": "1.0.1",
 	"version_date": "2025-01-11 00:00:00",
 	"plugin_uri": "https://github.com/studiochampgauche/wordpress-plugin-test",
