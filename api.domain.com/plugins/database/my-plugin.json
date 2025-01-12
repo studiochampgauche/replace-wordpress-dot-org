@@ -1,0 +1,96 @@
+{
+	"my-plugin/init.php": {
+		"name": "My plugin",
+		"slug": "my-plugin",
+		"version": "1.0.0",
+		"version_date": "2025-01-11 00:00:00",
+		"website": "https://github.com/studiochampgauche/wordpress-plugin-test",
+		"package": "https://github.com/studiochampgauche/wordpress-plugin-test/archive/refs/heads/master.zip",
+		"author": "Studio Champ Gauche",
+		"author_url": "https://champgauche.studio",
+		"requires_wp": "6.1",
+		"requires_php": "8.2",
+		"tested_wp": "6.7.1",
+		"requires_plugins": [],
+		"compatibilities": [],
+		"license": "",
+		"license_url": "",
+		"network_only": false,
+		"downloads": {
+			"active": 3,
+			"total": 4
+		},
+		"reviews": {
+			"stars": [
+				{"name": "1", "total": 5},
+				{"name": "2", "total": 40},
+				{"name": "3", "total": 300},
+				{"name": "4", "total": 2000},
+				{"name": "5", "total": 10000}
+			],
+			"comments": [
+				{
+					"date": "2025-01-10 00:00:00",
+					"from": "username_slug",
+					"title": "",
+					"message": "",
+					"stars": 5,
+					"edits": [
+						{
+							"by": "username_slug",
+							"date": "2025-01-11 00:05:00",
+							"title": "",
+							"message": "",
+							"stars": 4
+						}
+					],
+					"replies": [
+						{
+							"date": "2025-01-10 01:00:00",
+							"from": "username_slug",
+							"message": "",
+							"edits": [
+								{
+									"by": "username_slug",
+									"date": "2025-01-11 01:05:00",
+									"message": ""
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"support_tickets": [
+			{
+				"date": "2025-01-10 00:00:00",
+				"from": "username_slug",
+				"title": "",
+				"message": "",
+				"edits": [
+					{
+						"by": "username_slug",
+						"date": "2025-01-11 00:05:00",
+						"title": "",
+						"message": ""
+					}
+				],
+				"replies": [
+					{
+						"date": "2025-01-10 01:00:00",
+						"from": "username_slug",
+						"message": "",
+						"edits": [
+							{
+								"by": "username_slug",
+								"date": "2025-01-11 01:05:00",
+								"message": ""
+							}
+						]
+					}
+				]
+			}
+		],
+		"tags": []
+	}
+}
