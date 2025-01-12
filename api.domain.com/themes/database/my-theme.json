@@ -1,7 +1,7 @@
 {
 	"name": "My theme",
 	"slug": "my-theme",
-	"version": "1.0.0",
+	"new_version": "1.0.0",
 	"version_date": "2025-01-11 00:00:00",
 	"theme_uri": "https://github.com/studiochampgauche/wordpress-theme-test",
 	"package": "https://github.com/studiochampgauche/wordpress-theme-test/archive/refs/heads/master.zip",
