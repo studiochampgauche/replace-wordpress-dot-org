@@ -62,11 +62,11 @@ if($active_plugins){
 
 	   	if($responses[$i]['new_version'] > array_values($active_plugins)[$i]['Version']){
 
-	   		$return['plugins'][] = $responses[$i];
+	   		$return['plugins'][$pluginsData['active'][$i]] = $responses[$i];
 
 	   	} else {
 
-	   		$return['no_update'][] = $responses[$i];
+	   		$return['no_update'][$pluginsData['active'][$i]] = $responses[$i];
 
 	   	}
 
