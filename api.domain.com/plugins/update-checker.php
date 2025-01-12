@@ -16,7 +16,7 @@ if(!isset($_SERVER['REQUEST_METHOD']) || $_SERVER['REQUEST_METHOD'] !== 'POST'){
 }
 
 
-$databaseURL = 'http://api.reactwp.com/plugins/database/';
+$databaseURL = 'http://api.reactwp.com/plugins/database/'; // http://raw.githubusercontent.com/studiochampgauche/replace-wordpress-dot-org/master/api.domain.com/plugins/database/
 
 $mh = curl_multi_init();
 $curl_handles = [];
