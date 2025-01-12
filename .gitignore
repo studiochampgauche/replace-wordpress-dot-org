@@ -1,8 +1,8 @@
-wordpress-develop/**
-!wordpress-develop/wp-config-sample.php
-!wordpress-develop/src/
-!wordpress-develop/src/wp-includes/
-!wordpress-develop/src/wp-includes/update.php
+#wordpress-develop/**
+#!wordpress-develop/wp-config-sample.php
+#!wordpress-develop/src/
+#!wordpress-develop/src/wp-includes/
+#!wordpress-develop/src/wp-includes/update.php
 
 domain.com/**/.npmrc
 domain.com/**/.htaccess
