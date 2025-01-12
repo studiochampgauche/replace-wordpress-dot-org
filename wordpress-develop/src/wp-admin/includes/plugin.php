@@ -52,8 +52,8 @@
  *     @type bool   $Network         Whether the plugin can only be activated network-wide.
  *     @type string $MinimumWP       Minimum required version of WordPress.
  *     @type string $MinimumPHP      Minimum required version of PHP.
- * 	   @type string $TestedWP        The last main WordPress version the theme has been tested up to.
- *     @type string $TestedPHP       The last main PHP version the theme has been tested up to.
+ * 	   @type string $TestedWP        The last main WordPress version the plugin has been tested up to.
+ *     @type string $TestedPHP       The last main PHP version the plugin has been tested up to.
  *     @type bool   $ManageUpdates   Allows you to dictate who should handle updates
  *     @type string $RequiresPlugins Comma separated list of dot org plugin slugs.
  * }
