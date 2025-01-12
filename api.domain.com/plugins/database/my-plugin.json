@@ -10,6 +10,7 @@
 	"requires_wp": "6.1",
 	"requires_php": "8.2",
 	"tested_wp": "6.7.1",
+	"tested_php": "",
 	"requires_plugins": [],
 	"compatibilities": [],
 	"license": "",
