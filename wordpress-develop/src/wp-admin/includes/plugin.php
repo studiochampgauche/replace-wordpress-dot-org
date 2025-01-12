@@ -83,7 +83,7 @@ function get_plugin_data( $plugin_file, $markup = true, $translate = true ) {
 		'TextDomain'      => 'Text Domain',
 		'DomainPath'      => 'Domain Path',
 		'Network'         => 'Network',
-		'RequiresWP'      => 'Requires at least',
+		'RequiresWP'      => 'Requires WP',
 		'RequiresPHP'     => 'Requires PHP',
 		'UpdateURI'       => 'Update URI',
 		'RequiresPlugins' => 'Requires Plugins',
