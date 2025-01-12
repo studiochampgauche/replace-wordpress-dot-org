@@ -7,16 +7,15 @@ wordpress-develop/**
 !wordpress-develop/src/wp-admin/includes/
 !wordpress-develop/src/wp-admin/includes/plugin.php
 
-domain.com/**/.npmrc
-domain.com/**/.htaccess
-domain.com/**/wp-config.php
 domain.com/**/dist
-domain.com/**/node_modules
-domain.com/**/package-lock.json
 
 
 api.domain.com/**/.htaccess
 api.domain.com/**/wp-config.php
 
+node_modules
+package-lock.json
 sftp-config.json
 wp-config.php
+.htaccess
+.npmrc
