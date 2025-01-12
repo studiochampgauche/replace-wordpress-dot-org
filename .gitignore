@@ -18,6 +18,5 @@ domain.com/**/package-lock.json
 api.domain.com/**/.htaccess
 api.domain.com/**/wp-config.php
 
-dist
 sftp-config.json
 wp-config.php
