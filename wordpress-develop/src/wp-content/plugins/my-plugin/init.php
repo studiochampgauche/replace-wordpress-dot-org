@@ -4,7 +4,7 @@
 * 	Name: My plugin
 * 	Website: https://github.com/studiochampgauche/wordpress-plugin-test
 * 	Version: 1.0.0
-*	Description: This my super plugin
+*	Description: This is my super plugin
 * 	Author Name: Studio Champ Gauche
 *	Author URL: https://champgauche.studio
 *	License: GPL
