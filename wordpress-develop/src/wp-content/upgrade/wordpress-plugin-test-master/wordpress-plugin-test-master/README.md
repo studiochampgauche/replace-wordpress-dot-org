@@ -1,1 +1,0 @@
-Test for https://github.com/studiochampgauche/replace-wordpress-dot-org
