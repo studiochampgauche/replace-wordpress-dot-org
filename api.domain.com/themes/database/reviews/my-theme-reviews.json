@@ -1,0 +1,41 @@
+{
+	"stars": [
+		{"name": "1", "total": 5},
+		{"name": "2", "total": 40},
+		{"name": "3", "total": 300},
+		{"name": "4", "total": 2000},
+		{"name": "5", "total": 10000}
+	],
+	"comments": [
+		{
+			"date": "2025-01-10 00:00:00",
+			"from": "username_slug",
+			"title": "",
+			"message": "",
+			"stars": 5,
+			"edits": [
+				{
+					"by": "username_slug",
+					"date": "2025-01-11 00:05:00",
+					"title": "",
+					"message": "",
+					"stars": 4
+				}
+			],
+			"replies": [
+				{
+					"date": "2025-01-10 01:00:00",
+					"from": "username_slug",
+					"message": "",
+					"edits": [
+						{
+							"by": "username_slug",
+							"date": "2025-01-11 01:05:00",
+							"message": ""
+						}
+					]
+				}
+			]
+		}
+	]
+}
