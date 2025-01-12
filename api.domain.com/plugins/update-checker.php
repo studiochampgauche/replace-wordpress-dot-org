@@ -15,6 +15,12 @@ if(!isset($_SERVER['REQUEST_METHOD']) || $_SERVER['REQUEST_METHOD'] !== 'POST'){
 
 }
 
+
+$data = json_decode(stripslashes($_POST['plugins']), true);
+
+$active_plugins = array_intersect_key($data['plugins'], array_flip($data['active']));
+
+
 echo wp_json_encode([
 	'plugins' => [],
 	'translations' => [],
