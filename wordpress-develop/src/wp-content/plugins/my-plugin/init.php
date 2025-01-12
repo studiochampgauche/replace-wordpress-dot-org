@@ -6,4 +6,5 @@
 * Version: 1.0.0
 * Author: Studio Champ Gauche
 * Author URI: https://champgauche.studio
+* Plugin URI: false
 */
