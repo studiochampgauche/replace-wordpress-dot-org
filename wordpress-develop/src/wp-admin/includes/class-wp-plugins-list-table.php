@@ -753,8 +753,8 @@ class WP_Plugins_List_Table extends WP_List_Table {
 		$restrict_network_active = false;
 		$restrict_network_only   = false;
 
-		$requires_php = isset( $plugin_data['RequiresPHP'] ) ? $plugin_data['RequiresPHP'] : null;
-		$requires_wp  = isset( $plugin_data['RequiresWP'] ) ? $plugin_data['RequiresWP'] : null;
+		$requires_php = isset( $plugin_data['MinimumPHP'] ) ? $plugin_data['MinimumPHP'] : null;
+		$requires_wp  = isset( $plugin_data['MinimumPHP'] ) ? $plugin_data['MinimumPHP'] : null;
 
 		$compatible_php = is_php_version_compatible( $requires_php );
 		$compatible_wp  = is_wp_version_compatible( $requires_wp );
@@ -1172,11 +1172,11 @@ class WP_Plugins_List_Table extends WP_List_Table {
 						$plugin_meta[] = sprintf( __( 'Version %s' ), $plugin_data['Version'] );
 					}
 
-					if ( ! empty( $plugin_data['Author'] ) ) {
-						$author = $plugin_data['Author'];
+					if ( ! empty( $plugin_data['AuthorName'] ) ) {
+						$author = $plugin_data['AuthorName'];
 
-						if ( ! empty( $plugin_data['AuthorURI'] ) ) {
-							$author = '<a href="' . $plugin_data['AuthorURI'] . '">' . $plugin_data['Author'] . '</a>';
+						if ( ! empty( $plugin_data['AuthorURL'] ) ) {
+							$author = '<a href="' . $plugin_data['AuthorURL'] . '">' . $plugin_data['AuthorName'] . '</a>';
 						}
 
 						/* translators: %s: Plugin author name. */
@@ -1198,13 +1198,13 @@ class WP_Plugins_List_Table extends WP_List_Table {
 							esc_attr( $plugin_name ),
 							__( 'View details' )
 						);
-					} elseif ( ! empty( $plugin_data['PluginURI'] ) ) {
+					} elseif ( ! empty( $plugin_data['Website'] ) ) {
 						/* translators: %s: Plugin name. */
 						$aria_label = sprintf( __( 'Visit plugin site for %s' ), $plugin_name );
 
 						$plugin_meta[] = sprintf(
 							'<a href="%s" aria-label="%s">%s</a>',
-							esc_url( $plugin_data['PluginURI'] ),
+							esc_url( $plugin_data['Website'] ),
 							esc_attr( $aria_label ),
 							__( 'Visit plugin site' )
 						);
@@ -1236,17 +1236,17 @@ class WP_Plugins_List_Table extends WP_List_Table {
 					 *     @type string   $upgrade_notice   The upgrade notice for the new plugin version.
 					 *     @type bool     $update-supported Whether the plugin supports updates.
 					 *     @type string   $Name             The human-readable name of the plugin.
-					 *     @type string   $PluginURI        Plugin URI.
+					 *     @type string   $Website          Plugin URL.
 					 *     @type string   $Version          Plugin version.
 					 *     @type string   $Description      Plugin description.
 					 *     @type string   $Author           Plugin author.
-					 *     @type string   $AuthorURI        Plugin author URI.
+					 *     @type string   $AuthorURL        Plugin author URL.
 					 *     @type string   $TextDomain       Plugin textdomain.
 					 *     @type string   $DomainPath       Relative path to the plugin's .mo file(s).
 					 *     @type bool     $Network          Whether the plugin can only be activated network-wide.
-					 *     @type string   $RequiresWP       The version of WordPress which the plugin requires.
-					 *     @type string   $RequiresPHP      The version of PHP which the plugin requires.
-					 *     @type string   $UpdateURI        ID of the plugin for update purposes, should be a URI.
+					 *     @type string   $MinimumPHP       The version of WordPress which the plugin requires.
+					 *     @type string   $MinimumPHP      The version of PHP which the plugin requires.
+					 *     @type string   $ManageUpdates    Allows you to dictate who should handle updates
 					 *     @type string   $Title            The human-readable title of the plugin.
 					 *     @type string   $AuthorName       Plugin author's name.
 					 *     @type bool     $update           Whether there's an available update. Default null.
