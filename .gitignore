@@ -3,9 +3,13 @@ wordpress-develop/**
 !wordpress-develop/src/
 !wordpress-develop/src/wp-includes/
 !wordpress-develop/src/wp-includes/update.php
+!wordpress-develop/src/wp-includes/rest-api/
+!wordpress-develop/src/wp-includes/rest-api/endpoints/
+!wordpress-develop/src/wp-includes/rest-api/endpoints/class-wp-rest-plugins-controller.php
 !wordpress-develop/src/wp-admin/
 !wordpress-develop/src/wp-admin/includes/
 !wordpress-develop/src/wp-admin/includes/plugin.php
+!wordpress-develop/src/wp-admin/includes/class-wp-plugins-list-table.php
 !wordpress-develop/src/wp-content/
 !wordpress-develop/src/wp-content/plugins/
 !wordpress-develop/src/wp-content/plugins/**
