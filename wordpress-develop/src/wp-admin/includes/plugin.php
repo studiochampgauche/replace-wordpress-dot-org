@@ -67,6 +67,8 @@ function get_plugin_data( $plugin_file, $markup = true, $translate = true ) {
 		'Description'     => 'Description',
 		'AuthorName'      => 'Author Name',
 		'AuthorURL'       => 'Author URL',
+		'License'		  => 'License',
+		'LicenseURL'	  => 'License URL',
 		'TextDomain'      => 'Text Domain',
 		'DomainPath'      => 'Domain Path',
 		'Network'         => 'Network',
